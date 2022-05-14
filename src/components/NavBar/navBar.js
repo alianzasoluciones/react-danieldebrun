@@ -1,10 +1,10 @@
 import React from "react"; 
-
+import CartWidget from "../cartWidget/cartWidget";
 
 
 const Menu = () => {
     return (
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar  navbar-expand-lg  navbar-light bg-info">
   <div class="container-fluid">
     <a class="navbar-brand" href="./prueba">React</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,16 @@ const Menu = () => {
         </li>
         
         
+        
       </ul>
     </div>
+     
   </div>
+  
+  <div class="form-control me-2"> <CartWidget  /></div>
+  
 </nav>
+
     );
 }
 
