@@ -1,0 +1,32 @@
+https://i.blogs.es/3bc266/sonycdx/450_1000.jpg
+const products = [
+        {id:'1',
+    name:'sony',
+    precio:'5500',
+    categorya:'audio',
+    img:'https://i.blogs.es/3bc266/sonycdx/450_1000.jpg',
+    stock: 10,
+    descripcion:'1500rpm',
+    },
+    {id:'1',
+    name:'',
+    precio:'',
+    categorya:'',
+    img:'',
+    stock: 10 ,
+    descripcion:'',
+    },
+    {id:'1',
+    name:'',
+    precio:'',
+    categorya:'',
+    img:'',
+    stock: 10,
+    descripcion:'',
+    }
+    ] 
+
+    const newProducts = products.map (product => <p>{product.name}</p>)
+    return <div className='ItemListContainer'><h1>{greeting}</h1>
+    {newProducts}
+    </div>
