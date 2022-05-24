@@ -3,14 +3,7 @@ const products = [
 name:'sony',
 precio:'5500',
 categorya:'audio',
-img:< div > 
-<img src="./images/descarga.png" style={
-{
-width: 35, height: 35, display:"inline-block", alignItems: "flex-end", padding:5
-}} alt="card-widget"  /> 
-3
-
-</div>,
+img:'',
 stock: 10,
 descripcion:'1500rpm',
 },
@@ -18,14 +11,7 @@ descripcion:'1500rpm',
 name:'paioner',
 precio:'8000',
 categorya:'audio',
-img: < div > 
-<img src="./images/descarga.png" style={
-{
-width: 35, height: 35, display:"inline-block", alignItems: "flex-end", padding:5
-}} alt="card-widget"  /> 
-3
-
-</div>,
+img: '',
 stock: 10 ,
 descripcion:'2700rpm',
 },
@@ -33,14 +19,7 @@ descripcion:'2700rpm',
 name:'xion',
 precio:'1200',
 categorya:'audio',
-img:< div > 
-<img src="./images/descarga.png" style={
-{
-width: 35, height: 35, display:"inline-block", alignItems: "flex-end", padding:5
-}} alt="card-widget"  /> 
-3
-
-</div>,
+img:'',
 stock: 10,
 descripcion:'800rpm',
 }
