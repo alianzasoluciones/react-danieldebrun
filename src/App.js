@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import ItemDetail from './components/ItemDetailContainer/ItemDetail';
 
 
 function App() {
@@ -9,11 +9,11 @@ function App() {
     <div className="App" style={{background:'lightblue'}}>
       <div className='navbar'  ><NavBar />
       </div>
-      <ItemListContainer />
-      
+      <ItemDetail/>
       
     </div>
   );
 }
-
+      
 export default App;
+
