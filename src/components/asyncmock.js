@@ -22,12 +22,24 @@ categorya:'audio',
 img:'https://http2.mlstatic.com/D_NQ_NP_725772-MLU48961503130_012022-O.jpg',
 stock: 10,
 descripcion:'800rpm'}
- ]
+ ];
 
-export const getProductsByID = ({id}) => {
-    return new Promise ((resolve, reject) => {
+
+
+export const getProductById = (id) => {
+    return new Promise((resolve) => {
+        setTimeout(()=> {
+            resolve(productos.find( prod=> prod.id === id))
+        },1000)
+    }
+
+    )  
+}
+export const getProducts =()=>  {
+    return new Promise ((resolve,) => {
         setTimeout (()=>{
             resolve(productos)
-        }, 2000)
+        }, 1000)
     })
 }
+
