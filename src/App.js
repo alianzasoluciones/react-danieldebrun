@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App" style={{background:'lightblue'}}>
       <div className='navbar'  ><NavBar />
-      {/*<ItemListContainer  greeting="todo en audio"/>*/}
-      <ItemDetailContainer />
-      </div>
+     {/* <ItemListContainer  greeting="todo en audio"/>*/}
       
+      </div>
+      <ItemDetailContainer />
       
     </div>
   );

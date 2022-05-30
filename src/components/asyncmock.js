@@ -3,7 +3,7 @@ const productos = [
 name:'sony',
 precio:'$5500',
 categorya:'audio',
-img:'https://cdn.pixabay.com/photo/2017/03/23/03/58/radio-for-car-2167269_960_720.png',
+imagen:'https://cdn.pixabay.com/photo/2017/03/23/03/58/radio-for-car-2167269_960_720.png',
 stock: 10,
 descripcion:'Mantente en contacto en la carretera con la conectividad Bluetooth® doble del DSX-A410BT. Conecta de forma inalámbrica un primer teléfono para reproducir música, obtener direcciones y comunicarte con tus contactos. Agrega un segundo teléfono para realizar llamadas adicionales con manos libres mientras viajas.',
 },
@@ -11,7 +11,7 @@ descripcion:'Mantente en contacto en la carretera con la conectividad Bluetooth�
 name:'paioner',
 precio:'$8000',
 categorya:'audio',
-img: 'https://pioneer-latin.com/wp-content/uploads/2019/09/Receptores-de-audio-y-medios.fw-1.png',
+imagen: 'https://pioneer-latin.com/wp-content/uploads/2019/09/Receptores-de-audio-y-medios.fw-1.png',
 stock: 10 ,
 descripcion:'2700rpm',
 },
@@ -19,14 +19,14 @@ descripcion:'2700rpm',
 name:'xion',
 precio:'$1200',
 categorya:'audio',
-img:'https://http2.mlstatic.com/D_NQ_NP_725772-MLU48961503130_012022-O.jpg',
+imagen:'https://http2.mlstatic.com/D_NQ_NP_725772-MLU48961503130_012022-O.jpg',
 stock: 10,
 descripcion:'800rpm'}
  ];
 
 
 
-export const getProductById = (id) => {
+export const getProductsById = (id) => {
     return new Promise((resolve) => {
         setTimeout(()=> {
             resolve(productos.find( prod=> prod.id === id))
@@ -36,7 +36,7 @@ export const getProductById = (id) => {
     )  
 }
 export const getProducts =()=>  {
-    return new Promise ((resolve,) => {
+    return new Promise ((resolve) => {
         setTimeout (()=>{
             resolve(productos)
         }, 1000)

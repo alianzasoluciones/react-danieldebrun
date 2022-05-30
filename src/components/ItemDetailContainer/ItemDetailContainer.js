@@ -6,14 +6,15 @@ const ItemDetailContainer = ({id}) => {
     const [product, setProduct] = useState()
 
     useEffect(() => {
-        getProductsById(id).then(response => {
+        getProductsById('1').then(response => {
             setProduct(response)
         })
-    },)
+    },[])
 
     return(
         <div >
-            <ItemDetail title={product?.name}/>
+            <ItemDetail {...product}/>
+          
         </div>
     )
 }
