@@ -1,39 +1,42 @@
-import React from "react"; 
+ 
+import { Link,  } from "react-router-dom";
 import CartWidget from "../CartWidget/CartWidget";
 
 
 const NavBar = () => {
     return (
-<nav class="navbar  navbar-expand-lg  navbar-light bg-info">
+<nav class="navbar fixed-bottom navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="./prueba">React</a>
+  <Link to={'/'}>
+     <h2>Todo accesorios</h2>
+  </Link>
+    <Link to='/category/audio'>Radio</Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./prueba">Respuestos</a>
+          <Link to='/category/llantas'>Llantas</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./prueba">Partes</a>
+          <Link to='/category/cubiertas'>Cubiertas</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./prueba">Modelos</a>
+          <Link to='/atras'>Atras</Link>
         </li>
-        
-        
+      
         
       </ul>
+  <div className="form-control me-2"> <CartWidget  /></div>
     </div>
      
   </div>
   
-  <div class="form-control me-2"> <CartWidget  /></div>
   
 </nav>
 
-    );
+    )
 }
 
 export default NavBar

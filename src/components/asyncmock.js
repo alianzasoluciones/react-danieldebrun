@@ -2,26 +2,26 @@ const productos = [
     {id:'1',
 name:'sony',
 precio:'$5500',
-categorya:'audio',
+category:'audio',
 imagen:'https://cdn.pixabay.com/photo/2017/03/23/03/58/radio-for-car-2167269_960_720.png',
 stock: 10,
 descripcion:'Mantente en contacto en la carretera con la conectividad Bluetooth® doble del DSX-A410BT. Conecta de forma inalámbrica un primer teléfono para reproducir música, obtener direcciones y comunicarte con tus contactos. Agrega un segundo teléfono para realizar llamadas adicionales con manos libres mientras viajas.',
 },
 {id:'2',
-name:'paioner',
+name:'Rims',
 precio:'$8000',
-categorya:'audio',
-imagen: 'https://pioneer-latin.com/wp-content/uploads/2019/09/Receptores-de-audio-y-medios.fw-1.png',
+category:'llantas',
+imagen: 'https://image.made-in-china.com/155f0j00NLsRMbjzSwch/Sports-Rims-for-Cars.jpg',
 stock: 10 ,
-descripcion:'2700rpm',
+descripcion:'Material Aluminio Tipo Aro de Acero Wheel DriveRWD Diámetro de rueda Hub 16-20 Acabado	NegroAccesorios ruedas	Tapacubos',
 },
 {id:'3',
-name:'xion',
+name:'Pirelli',
 precio:'$1200',
-categorya:'audio',
-imagen:'https://http2.mlstatic.com/D_NQ_NP_725772-MLU48961503130_012022-O.jpg',
+category:'Cubiertas',
+imagen:'https://d3nv2arudvw7ln.cloudfront.net/images/global/231/180/scorpion-MUD-sfondo-1505470065788.jpg',
 stock: 10,
-descripcion:'800rpm'}
+descripcion:'Constantemente desafiamos los límites de la tecnología, el estilo y la sustentabilidad, marcando tendencias en todo el mundo'}
  ];
 
 
@@ -43,3 +43,10 @@ export const getProducts =()=>  {
     })
 }
 
+export const getProductsByCategory = (categoryId) => {
+    return new Promise(resolve => {
+        setTimeout(()=>{
+            resolve(productos.filter(prod => prod.category === categoryId))
+        },1000)
+    })
+}
