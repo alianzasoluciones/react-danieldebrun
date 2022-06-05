@@ -5,7 +5,7 @@ import CartWidget from "../CartWidget/CartWidget";
 
 const NavBar = () => {
     return (
-<nav class="navbar fixed-bottom navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
   <Link to={'/'}>
      <h2>Todo accesorios</h2>

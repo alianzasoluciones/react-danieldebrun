@@ -8,9 +8,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App" style={{background:'lightblue'}}>
+    <div className="App" style={{background:'pink', color:'red', fontSize:20,itemAlign:'center'}}>
       <BrowserRouter>
-      <div className='navbar'  ><NavBar />
+      <div className='navbar' style={{background:'red'}}  ><NavBar />
       </div>
       <Routes>
       <Route path='/' element={<ItemListContainer greeting="Todos los Productos"/>}/>

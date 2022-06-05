@@ -2,3 +2,4 @@
 
 #ecomerce destinado para accesorios de autos
 
+#agregado para la entrega el itemCount y el /cart
