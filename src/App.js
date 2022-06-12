@@ -6,11 +6,13 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Cart from './components/Cart/Cart';
 import { CartContextProvider } from './CartContext/CartContext';
+import { NotificationProvider } from './Notificaciones/Notificacion'
 
 function App() {
   return (
     <div className="App" style={{background:'pink', color:'red', fontSize:20,itemAlign:'center'}}>
       <CartContextProvider>
+      <NotificationProvider>
       <BrowserRouter>
       <div className='navbar' style={{background:'red'}}  ><NavBar />
       </div>
@@ -24,6 +26,7 @@ function App() {
 
       </Routes>
       </BrowserRouter>
+      </NotificationProvider>
       </CartContextProvider>
       
      
