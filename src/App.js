@@ -14,6 +14,7 @@ function App() {
       <CartContextProvider>
       <NotificationProvider>
       <BrowserRouter>
+      
       <div className='navbar' style={{background:'red'}}  ><NavBar />
       </div>
       <Routes>
