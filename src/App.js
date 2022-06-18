@@ -1,13 +1,13 @@
 
-import './App.css';
-import NavBar from './components/NavBar/NavBar'
+
+
+import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Cart from './components/Cart/Cart';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from './CartContext/CartContext';
-import { NotificationProvider } from './Notificaciones/Notificacion'
-
+import { NotificationProvider } from './Notificaciones/Notification';
 function App() {
   return (
     <div className="App" style={{background:'pink', color:'red', fontSize:20,itemAlign:'center'}}>

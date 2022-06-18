@@ -1,14 +1,12 @@
-import { memo } from 'react'
+
 import Item from '../Item/Item'
 
-const ItemList = ({products}) => {
+const ItemList = ({productos}) => {
     return (
         <div>
-            {products.map(prod => <Item key={prod.id} {...prod} />)}
+            {productos.map(prod => <Item key={prod.id} {...prod} />)}
         </div>
     )
 }
 
-export default memo(ItemList, (prevProps, nextProps) => {
-    return true
-})
+export default ItemList

@@ -3,15 +3,15 @@ import { useState, createContext, useContext } from "react";
 const Notification = ({ message, severity }) => {
 
     const notificationStyles = {
-      position: 'absolute',
-      top: 100,
-      right: 5,
+      position: 'wrap',
+      top: 120,
+      right: 8,
       width: 'auto',
       height: 'auto',
-      backgroundColor: severity === 'error' ? 'red' : 'green',
+      backgroundColor: severity === 'error' ? 'orange' : 'violet',
       padding: '10px 20px 10px 20px',
       color: 'white',
-      borderRadius: 5
+      borderRadius: 7
     }
 
     if(message === '') {
