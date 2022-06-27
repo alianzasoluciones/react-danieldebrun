@@ -1,9 +1,15 @@
 import { useContext } from "react"
 import CartContext from "../../CartContext/CartContext"
+import Formulario from "../../Form/Formulario"
 import CartItem from '../CartItem/CartItem'
 
 const Cart = () => {
     const { cart, clearCart, getTotal, getQuantity } = useContext(CartContext)  
+
+    const ordenCompras = () => {
+        console.log('ordenCompras');
+    }
+
 
     if(getQuantity() === 0) {
         return (
@@ -17,8 +23,8 @@ const Cart = () => {
             { cart.map(p => <CartItem key={p.id} {...p}/>) }
             <h3>Total: ${getTotal()}</h3>
             <button onClick={() => clearCart()} className="Button">Limpiar carrito</button>
-            <button >Generar Orden</button>
-
+            <button onClick={ordenCompras}>Generar Orden</button>
+            <Formulario />
         </div>
     )
 }
